@@ -1,0 +1,48 @@
+server:
+  port: 8080
+
+spring:
+  banner:
+    charset: utf-8
+    location: banner.txt
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://8.138.175.113:3306/hmdp?useSSL=false&serverTimezone=UTC
+    username: root
+    password: Qjh15108079368
+
+  redis:
+    host: 8.138.175.113
+    port: 6379
+    password: qjh15108079368
+    database: 0
+    lettuce:
+      pool:
+        max-active: 10
+        max-idle: 10
+        min-idle: 1
+        time-between-eviction-runs: 10s
+
+  jackson:
+    default-property-inclusion: non_null
+
+  rabbitmq:
+    host: 8.138.175.113
+    port: 5672
+    virtual-host: /qyp
+    username: qyp
+    password: 123456
+
+mybatis-plus:
+  type-aliases-package: com.guet.entity
+  global-config:
+    banner: false
+
+logging:
+  level:
+    com.guet: debug
+  spring:
+    main:
+      debug: true
+

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # shop_app_front
 
 ## Project setup
@@ -22,3 +23,6 @@ pnpm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+=======
+# dianping-
+>>>>>>> 404dc5fbcaf267d2627067ab752df97327ccc1ee
